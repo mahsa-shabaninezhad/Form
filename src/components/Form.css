@@ -1,0 +1,109 @@
+.form-container h2{
+    text-align: center;
+    margin: 1.5rem;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 2px 10px;
+    background-color: var(--color-gray-dark);
+    border: 1px solid #dbd4d4;
+    color: #dbd4d4;
+}
+
+select,
+input:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+input::placeholder,
+select::placeholder{
+    color: #dbd4d4;
+  
+}
+
+input[name='fName'],
+input[name='lName']{
+    width: 45%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.error{
+    border-bottom: 1px solid red;
+}
+.error-select{
+    border: 1px solid red;
+
+}
+.fixed{
+    border-bottom: 1px solid var(--color-green);
+}
+.fixed-select{
+    border: 1px solid var(--color-green);
+}
+
+.password-input{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-visibility{
+    cursor: pointer;
+    fill: var(--color-gray-light);
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: 5px;
+    top: 1px;
+}
+
+label{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.btn--submit{
+    background-color: var(--color-green);
+    border: none;
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.btn--submit:active{
+    transform: translateY(5px);
+}
+
+.forgot-link{
+    text-decoration: none;
+    color: var(--color-green);
+    margin-bottom: 1rem;
+    transition: transform .5s;
+}
+
+.forgot-link:hover{
+    text-decoration: underline;
+}
+
+.forgot-link:active{
+    text-decoration: underline;
+    transform: scale(0.95);
+}
+
+
+

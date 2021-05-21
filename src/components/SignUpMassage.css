@@ -1,0 +1,50 @@
+.popUp-container{
+    background-color: #cfcfd193;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.signUp-data{
+    padding: 2rem;
+    width: 50%;
+    color: var(--color-gray-dark);
+    color: #fff;
+    border-radius: 5px;
+    background-image: radial-gradient(#1b4a70, var(--color-gray-dark));
+    animation: showModal 1s;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.39);
+    position: relative;
+}
+
+.signUp-data p{
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.close-signUp-popUp{
+    position: absolute;
+    fill: #3289d1;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+
+.signUp-data h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@keyframes showModal {
+    0%{
+        transform:scaleY(0);
+    }
+    100%{
+        transform:scaleY(100%);
+    }
+}
